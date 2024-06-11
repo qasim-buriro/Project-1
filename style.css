@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    background-color: var(--bg-color);
+    padding: 0 8rem;
+
+}
+
+header nav .another-part {
+    /* width: 3rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .another-part a {
+    padding: 8px;
+    font-size: 16px;
+}
+
+header nav .another-part a:hover {
+    color: #0ef;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+section {
+    height: 100vh;
+    padding: 0 8rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: calc(100vh - 75px); */
+    background-color: var(--bg-color);
+}
+
+.home .home-img {
+    width: 35vw;
+    animation: img-float 3s ease-in-out infinite;
+}
+
+@keyframes img-float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home .my-self {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.home .my-self h1 {
+    font-size: 2rem;
+}
+
+.home .my-self .special-name {
+    font-size: 3.3rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 16rem;
+    margin-top: 1.5rem;
+}
+
+.icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.2rem solid var(--main-color);
+    width: 3rem;
+    height: 3rem;
+    transition: 0.5s;
+}
+
+.icons a i {
+    transition: 0.5s;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.icons a:hover {
+    background-color: #0ef;
+
+}
+
+.icons a:hover i {
+    color: var(--bg-color);
+}
+
+.button {
+    margin-top: 1.5rem;
+}
+
+.button button {
+    padding: 0.8rem 2.4rem;
+    border-radius: 1.7rem;
+    background-color: var(--main-color);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 0 0 20px var(--main-color);
+    transition: .3s;
+}
+
+.button button:hover {
+    box-shadow: 0 0 0 0;
+}
+
+.about {
+    background-color: var(--second-bg-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-my-self {
+    padding-left: 20px;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+}
+
+.about-img {
+    width: 35vw;
+    animation: img-float 3s ease-in-out infinite;
+    padding-top: 2rem;
+}
+
+.about-my-self p {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.about-my-self .large-text {
+    font-size: 3.3rem;
+}
+
+.about-my-self .large-text .me {
+    color: #0ef;
+}
+
+.about-my-self .medium-text {
+    font-size: 2rem;
+}
+
+.services {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.services .text h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.services .text h1 span {
+    color: #0ef;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32rem;
+    gap: 2rem;
+}
+
+.check {
+    height: 31rem;
+    width: 22rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 30rem;
+    width: 19rem;
+    background-color: var(--second-bg-color);
+    padding: 0 1.3rem;
+    gap: 10px;
+    border-radius: 16px;
+    transition: .4s;
+}
+
+.card:hover {
+    border: 2px solid var(--main-color);
+    transform: scale(1.1);
+}
+
+.card h1 {
+    font-size: 1.8rem;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.code {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.portfolio {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.heading h1 {
+    font-size: 3rem;
+}
+
+.heading h1 span {
+    color: var(--main-color);
+}
+
+.my-projects {
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    /* gap: .5rem; */
+}
+
+.project-card {
+    height: 28vh;
+    width: 26vw;
+    position: relative;
+}
+
+.project-card img {
+    height: 28vh;
+    width: 26vw;
+    border-radius: 12px;
+}
+
+.project-layer {
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: .4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.8;
+    background: linear-gradient(rgb(2, 124, 133), #1f242d);
+
+}
+
+.project-card:hover .project-layer {
+    transform: translateY(0);
+}
+
+.contact {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.call h1 {
+    font-size: 3rem;
+}
+
+.call h1 span {
+    color: #0ef;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first-input-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.first-input-box input {
+    background-color: var(--second-bg-color);
+    padding: 1.5rem;
+    width: 16rem;
+    font-size: .9rem;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+}
+
+.second-input-box textarea {
+    background-color: var(--second-bg-color);
+    width: 36.4rem;
+    border-radius: 8px;
+    height: 15rem;
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    color: gray;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8rem;
+    color: gray;
+}
+
+.up-icon {
+    height: 3vh;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.up-icon a {
+    background-color: var(--main-color);
+    padding: .5rem .5rem;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.up-icon a i {
+    font-size: 2rem;
+    color: var(--bg-color);
+
+}
+
+@media only screen and (max-width : 1140px) {
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 25rem;
+        width: 15rem;
+        background-color: var(--second-bg-color);
+        padding: 0 1rem;
+        gap: 6px;
+        border-radius: 16px;
+
+        transition: .4s;
+    }
+
+    .check {
+        height: 27rem;
+        width: 17rem;
+    }
+
+    .card h1 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .code {
+        font-size: 4rem;
+        color: var(--main-color);
+    }
+
+}
+
+@media only screen and (max-width : 930px) {
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 22rem;
+        width: 12rem;
+        padding: 0 .8rem;
+        gap: 5px;
+        border-radius: 16px;
+    }
+
+    .check {
+        height: 24rem;
+        width: 14rem;
+    }
+
+    .card h1 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        text-align: center;
+        font-size: .7rem;
+    }
+
+    .code {
+        font-size: 3rem;
+        color: var(--main-color);
+    }
+
+    .button button {
+        padding: 0.5rem 1.8rem;
+        border-radius: 1.7rem;
+        background-color: var(--main-color);
+        font-weight: 600;
+        font-size: .8rem;
+        border: none;
+        box-shadow: 0 0 20px var(--main-color);
+        transition: .3s;
+    }
+    footer{
+        padding: 0 4rem;
+    }
+    footer .copy{
+        font-size: .8rem;
+    }
+    
+.up-icon a{
+    padding: .2rem .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.up-icon a i {
+    font-size: 2rem;
+}
+}
+
+@media only screen and (max-width : 850px) {
+    header nav {
+        padding: 0 5rem;
+    }
+
+    header nav .another-part a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    section {
+        height: 100vh;
+        padding: 0 5rem;
+    }
+
+    .home .my-self h1 {
+        font-size: 1.5rem;
+    }
+
+    .home .my-self .special-name {
+        font-size: 2rem;
+    }
+
+    .icons a {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .icons a i {
+        font-size: 1.5rem;
+    }
+
+    .about-my-self .large-text {
+        font-size: 2rem;
+    }
+
+    .about-my-self .medium-text {
+        font-size: 1.5rem;
+    }
+
+    .about-my-self p {
+        font-size: 12px;
+        width: 250px;
+    }
+    .portfolio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .my-projects {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: 70vw;
+    }
+    .project-card img {
+        height: 26vh;
+        width: 36vw;
+        border-radius: 12px;
+    }
+    .heading{
+        padding-top: 3rem;
+    }
+    .heading h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: .6rem;
+        margin-bottom: 2rem;
+    }
+
+    .check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 14rem;
+        width: 80vw;
+    }
+
+    .card {
+        height: 12rem;
+        width: 78vw;
+        padding: 0 .8rem;
+    }
+
+    .services .text h1 {
+        font-size: 2rem;
+    }
+
+    .card h1 {
+        font-size: 1rem;
+    }
+    .call h1{
+        font-size: 1.6rem;
+    }
+    .card p {
+        font-size: .5rem;
+    }
+
+    .code {
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .my-projects {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: 90vw;
+    }
+    .project-card img {
+        height: 26vh;
+        width: 38vw;
+    }
+
+.first-input-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.first-input-box input{
+    width: 26rem;
+    height: .5rem;
+}
+.call h1{
+    font-size: 1.1rem;
+}
+.second-input-box textarea{
+    height: 15rem;
+    width: 26rem;
+    padding: 1.5rem;
+}
+}
+@media only screen and (max-width: 620px) {
+    header nav .another-part a {
+        font-size: 12px;
+    }
+
+    .home {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    .home .my-self h1 {
+        font-size: 1.2rem;
+    }
+
+    .home .my-self .special-name {
+        font-size: 1.6rem;
+    }
+
+    .home .home-img {
+        margin-bottom: 1.8rem;
+        width: 40vw;
+    }
+
+    .icons {
+        width: 12rem;
+    }
+
+    .icons a {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    .icons a i {
+        font-size: .8rem;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-my-self .large-text {
+        font-size: 1.6rem;
+    }
+
+    .about-my-self p {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .about-my-self .medium-text {
+        font-size: 1.2rem;
+    }
+
+    .about-img {
+        width: 40vw;
+    }
+
+    .out-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        padding: 0 2rem;
+    }
+    footer .copy{
+        font-size: .7rem;
+    }
+    
+}
+
+@media only screen and (max-width:590px) {
+    header nav {
+        padding: 0 3rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    header nav {
+        padding: 0 2rem 0 2rem;
+    }
+
+    header nav .another-part a {
+        padding: 4px;
+        font-size: 9px;
+    }
+    .my-projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+        width: 90vw;
+    }
+    .project-card img {
+        height: 20vh;
+        width: 36vw;
+    }
+    .heading h1{
+        font-size: 1.5rem;
+    }
+    .first-input-box input{
+        width: 20rem;
+        height: .5rem;
+    }
+    .second-input-box textarea{
+        height: 12rem;
+        width: 20rem;
+    }
+    footer{
+        padding: 0 1rem;
+    }
+    footer .copy{
+        font-size: .6rem;
+    }
+    .up-icon a {
+        padding: .4rem .4rem;
+    }
+    
+    .up-icon a i {
+        font-size: 1.2rem;
+    
+    }
+    
+}
+
+@media only screen and (max-width:400px) {
+    .home .home-img {
+        width: 45vw;
+    }
+
+    .about-img {
+        margin-bottom: 2rem;
+        width: 45vw;
+    }
+
+    header nav {
+        padding: 0 1rem 0 1.5rem;
+    }
+
+    .cards {
+        margin-bottom: 3rem;
+    }
+
+    .button button {
+        padding: 0.2rem 1.4rem;
+        font-size: .6rem;
+        border: none;
+    }
+
+    .services .text {
+        margin-top: 1rem;
+    }
+
+    .services .text h1 {
+        font-size: 1.2rem;
+    }
+
+    .card h1 {
+        font-size: .8rem;
+    }
+
+    .card p {
+        text-align: center;
+        font-size: .4rem;
+    }
+
+    .code {
+        font-size: 2.2rem;
+    }
+    .first-input-box input{
+        width: 15rem;
+        height: .5rem;
+    }
+    .second-input-box textarea{
+        height: 12rem;
+        width: 15rem;
+    }
+}
